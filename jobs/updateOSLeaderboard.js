@@ -10,7 +10,6 @@ function updateLeaderboardJob() {
         console.log("========")
         generateLeaderboard();
     });
-
 }
 
 module.exports.updateLeaderboardJob = updateLeaderboardJob;
