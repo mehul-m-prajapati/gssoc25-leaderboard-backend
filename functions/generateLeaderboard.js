@@ -41,11 +41,16 @@ async function generateLeaderboard() {
                                 login: prs[i].user.login,
                                 url: prs[i].user.html_url,
                                 score: 0,
+                                postManTag: false,
                                 pr_urls: [],
                             }
                             //convert labels to keys
 
                         }
+                        if (prs[i].labels[j].name.toLowerCase() === "postman") {
+                            leaderboard[prs[i].user.id].postManTag = true
+                            leaderboard[prs[i].user.id].score += 500
+                        } 
                         if (leaderboard[prs[i].user.id].pr_urls.indexOf(prs[i].html_url) == -1) {
                             leaderboard[prs[i].user.id].pr_urls.push(prs[i].html_url);
                         }
