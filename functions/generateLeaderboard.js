@@ -1,138 +1,172 @@
-var fs = require("fs");
-var axios = require('axios');
-const { type } = require("os");
-require('dotenv').config()
+const fs = require("fs");
+const axios = require("axios");
+require("dotenv").config();
 
-const timer = ms => new Promise(res => setTimeout(res, ms))
+// CONFIGURATION
+const LABELS = [
+  { label: "level1", points: 5 },
+  { label: "level2", points: 7 },
+  { label: "level3", points: 10 },
+];
+const POSTMAN_BONUS = 500;
+const IDENTIFYING_LABELS = ["gssoc25", "GSSoC'25", "gssoc"];
+const DATE_RANGE = "closed:2025-07-15..2025-10-20";
+const API_URL = "https://api.github.com/search/issues";
+//const PROJECTS_URL = "https://opensheet.elk.sh/1JiqHjGyf43NNkou4PBe7WT4KEyueuFJct2p322nNMNw/JSON";
+
+const PROJECTS_URL = "./projects.json";
+
+const GITHUB_TOKEN = process.env.GIT_TOKEN;
+
+const timer = (ms) => new Promise((res) => setTimeout(res, ms));
+
 let leaderboard = {};
 
-async function generateLeaderboard() {
-    let projects = await axios.get(`https://opensheet.elk.sh/1JiqHjGyf43NNkou4PBe7WT4KEyueuFJct2p322nNMNw/JSON`)
-    leaderboard = {};
-    projects = projects.data;
-    let identifyingLabel = "gssoc23";
-    let labels = [{
-        label: "level1",
-        points: 10
-    }, {
-        label: "level2",
-        points: 25
-    }, {
-        label: "level3",
-        points: 45
-    }]
-    for (let m = 0; m < projects.length; m++) {
-        let projectLink = projects[m].project_link;
-        projects[m].project_link = projects[m].project_link.split("/")[3] + "/" + (projects[m].project_link.split("/")[4] ? projects[m].project_link.split("/")[4] : '');
-
-        await axios.get(`https://api.github.com/search/issues?q=repo:${projects[m].project_link}+is:pr+label:gssoc24,GSSoC'24,gssoc+is:merged+closed:2024-05-10..2024-08-10&per_page=100`, {
-            headers: {
-                Authorization: 'token ' + process.env.GIT_TOKEN
-            }
-        }).then(async function (response) {
-            if (response.data.items && response.data.items.length > 0) {
-                let prs = response.data.items;
-                //console.log(prs);
-                for (let i = 0; i < prs.length; i++) {
-                    for (let j = 0; j < prs[i].labels.length; j++) {
-                        if (!leaderboard[prs[i].user.id]) {
-                            leaderboard[prs[i].user.id] = {
-                                avatar_url: prs[i].user.avatar_url,
-                                login: prs[i].user.login,
-                                url: prs[i].user.html_url,
-                                score: 0,
-                                postManTag: false,
-                                pr_urls: [],
-                            }
-                            //convert labels to keys
-
-                        }
-                        if (prs[i].labels[j].name.toLowerCase() === "postman") {
-                            leaderboard[prs[i].user.id].postManTag = true
-                            leaderboard[prs[i].user.id].score += 500
-                        } 
-                        if (leaderboard[prs[i].user.id].pr_urls.indexOf(prs[i].html_url) == -1) {
-                            leaderboard[prs[i].user.id].pr_urls.push(prs[i].html_url);
-                        }
-                        let obj = labels.find(o => o.label === prs[i].labels[j].name);
-                        if (obj) {
-                            leaderboard[prs[i].user.id].score += obj.points;
-                        }
-
-                    }
-                }
-                if (response.data.total_count > 100) {
-                    //calculate number of pages
-                    let pages = Math.ceil(response.data.total_count / 100);
-                    console.log("========")
-                    console.log("No. of pages: " + pages);
-                    console.log(`https://api.github.com/search/issues?q=repo:${projects[m].project_link}+is:pr+label:gssoc24,GSSoC'24,gssoc+is:merged`);
-                    console.log("========")
-                    for (let i = 2; i <= pages; i++) {
-                        console.log("Page: " + i);
-                        let paginated = await axios.get(`https://api.github.com/search/issues?q=repo:${projects[m].project_link}+is:pr+label:gssoc24,GSSoC'24,gssoc+is:merged+closed:2024-05-10..2024-08-10&per_page=100&page=${i}`, {
-                            headers: {
-                                Authorization: 'token ' + process.env.GIT_TOKEN
-                            }
-                        }).then(async function (response) {
-                            console.log("*****" + response.data.items.length);
-                            if (response.data.items && response.data.items.length > 0) {
-                                let prs = response.data.items
-                                for (let i = 0; i < prs.length; i++) {
-                                    for (let j = 0; j < prs[i].labels.length; j++) {
-                                        if (!leaderboard[prs[i].user.id]) {
-                                            leaderboard[prs[i].user.id] = {
-                                                avatar_url: prs[i].user.avatar_url,
-                                                login: prs[i].user.login,
-                                                url: prs[i].user.html_url,
-                                                score: 0,
-                                                pr_urls: [],
-                                            }
-                                        }
-                                        if (leaderboard[prs[i].user.id].pr_urls.indexOf(prs[i].html_url) == -1) {
-                                            leaderboard[prs[i].user.id].pr_urls.push(prs[i].html_url);
-                                        }
-                                        let obj = labels.find(o => o.label === prs[i].labels[j].name);
-                                        if (obj) {
-                                            leaderboard[prs[i].user.id].score += obj.points;
-                                        }
-
-                                    }
-                                }
-                            }
-                            console.log("Completed page: " + (i + 1));
-
-                        })
-                        await timer(10000);
-                    }
-                }
-
-            }
-        }).catch(function (err) {
-            console.log("Not found for this project link ", projectLink);
-        }
-        )
-
-        console.log("Completed " + (m + 1) + " of " + projects.length);
-        await timer(10000);
-    }
-    // wait for all the prs to be fetched
-    console.log("Leaderboard generated");
-    //sort the leaderboard by score
-    let leaderboardArray = Object.keys(leaderboard).map(key => leaderboard[key]);
-    leaderboardArray.sort((a, b) => b.score - a.score);
-    let json = {
-        leaderboard: leaderboardArray,
-        success: true,
-        updatedAt: +new Date(),
-        generated: true,
-        updatedTimestring: new Date().toLocaleString() + " No New PRs merged after 10th August 11:59p.m are counted"
-    }
-    fs.truncate('leaderboard.json', 0, function () { console.log('done') })
-    fs.writeFile('leaderboard.json', JSON.stringify(json), 'utf8', function (err) {
-        if (err) throw err;
-        console.log('leaderboard.json was updated');
-    });
+function formatRepoPath(repoUrl) {
+  const parts = repoUrl.split("/");
+  return `${parts[3]}/${parts[4] ?? ""}`;
 }
 
-module.exports.generateLeaderboard = generateLeaderboard;
+// Utility: Normalize label strings (remove spaces, hyphens, lowercase)
+function normalizeLabel(label) {
+  return label.toLowerCase().replace(/[\s\-]/g, "");
+}
+
+function getLabelScore(labelName) {
+  const normalizedInput = normalizeLabel(labelName);
+  const found = LABELS.find((l) => l.label === normalizedInput);
+  return found ? found.points : 0;
+}
+
+function buildSearchQuery(repo) {
+  const labelsQuery = IDENTIFYING_LABELS.map((l) => `label:${l}`).join(",");
+  return `repo:${repo}+is:pr+${labelsQuery}+is:merged+${DATE_RANGE}`;
+}
+
+async function fetchPaginatedPRs(repo, totalCount) {
+  const pages = Math.ceil(totalCount / 100);
+  let allItems = [];
+
+  for (let page = 2; page <= pages; page++) {
+    console.log(`Fetching page ${page}/${pages}`);
+    try {
+      const res = await axios.get(`${API_URL}?q=${buildSearchQuery(repo)}&per_page=100&page=${page}`, {
+        headers: { Authorization: `token ${GITHUB_TOKEN}` },
+      });
+
+      if (res.data.items) {
+        allItems.push(...res.data.items);
+      }
+    } catch (err) {
+      console.error(`Failed to fetch page ${page}:`, err.message);
+    }
+    await timer(10000);
+  }
+
+  return allItems;
+}
+
+function updateLeaderboardFromPRs(prs) {
+  for (const pr of prs) {
+    const user = pr.user;
+    const userId = user.id;
+
+    if (!leaderboard[userId]) {
+      leaderboard[userId] = {
+        avatar_url: user.avatar_url,
+        login: user.login,
+        url: user.html_url,
+        score: 0,
+        pr_urls: new Set(),
+        postManTag: false,
+      };
+    }
+
+    for (const label of pr.labels) {
+      const name = label.name.toLowerCase();
+
+      if (name === "postman" && !leaderboard[userId].postManTag) {
+        leaderboard[userId].postManTag = true;
+        leaderboard[userId].score += POSTMAN_BONUS;
+      }
+
+      leaderboard[userId].score += getLabelScore(name);
+    }
+
+    leaderboard[userId].pr_urls.add(pr.html_url);
+  }
+}
+
+async function fetchPRsForProject(repo) {
+  try {
+    const res = await axios.get(`${API_URL}?q=${buildSearchQuery(repo)}&per_page=100`, {
+      headers: { Authorization: `token ${GITHUB_TOKEN}` },
+    });
+
+    if (res.data.items && res.data.items.length > 0) {
+      const initialPRs = res.data.items;
+      updateLeaderboardFromPRs(initialPRs);
+
+      if (res.data.total_count > 100) {
+        const paginatedPRs = await fetchPaginatedPRs(repo, res.data.total_count);
+        updateLeaderboardFromPRs(paginatedPRs);
+      }
+    }
+  } catch (err) {
+    console.warn(`PRs not found for repo: ${repo}`);
+  }
+}
+
+function exportLeaderboard() {
+  const leaderboardArray = Object.values(leaderboard).map((user) => ({
+    ...user,
+    pr_urls: Array.from(user.pr_urls),
+  }));
+
+  leaderboardArray.sort((a, b) => b.score - a.score);
+
+  const data = {
+    leaderboard: leaderboardArray,
+    success: true,
+    updatedAt: Date.now(),
+    generated: true,
+    updatedTimestring:
+      new Date().toLocaleString() +
+      " — No new PRs merged after 20th Oct 2025 11:59 p.m will be counted",
+  };
+
+  fs.writeFile("leaderboard.json", JSON.stringify(data, null, 2), "utf8", (err) => {
+    if (err) throw err;
+    console.log("✅ leaderboard.json was updated");
+  });
+}
+
+async function generateLeaderboard() {
+  console.log("🔄 Generating leaderboard...");
+
+  try {
+    //const { data: projects } = await axios.get(PROJECTS_URL);
+
+
+    const read_file = fs.readFileSync(PROJECTS_URL, "utf8");
+    const projects = JSON.parse(read_file);
+
+    for (let i = 0; i < projects.length; i++) {
+      const rawLink = projects[i].project_link;
+      const repo = formatRepoPath(rawLink);
+
+      console.log(`Processing ${repo} (${i + 1}/${projects.length})`);
+      await fetchPRsForProject(repo);
+      await timer(10000);
+    }
+
+    exportLeaderboard();
+    console.log("🏁 Leaderboard generation complete.");
+  } catch (err) {
+    console.error("❌ Error generating leaderboard:", err.message);
+  }
+}
+
+module.exports = {
+  generateLeaderboard,
+};
