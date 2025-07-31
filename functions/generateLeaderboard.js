@@ -9,7 +9,7 @@ const LABELS = [
   { label: "level3", points: 10 },
 ];
 const POSTMAN_BONUS = 500;
-const IDENTIFYING_LABELS = ["gssoc25", "GSSoC-25", "gssoc 25"];
+const IDENTIFYING_LABELS = ["gssoc25", "GSSoC'25", "gssoc 25"];
 const DATE_RANGE = "closed:2025-07-15..2025-10-20";
 const API_URL = "https://api.github.com/search/issues";
 //const PROJECTS_URL = "https://opensheet.elk.sh/1JiqHjGyf43NNkou4PBe7WT4KEyueuFJct2p322nNMNw/JSON";
@@ -70,12 +70,13 @@ async function fetchPRsForProject(repo) {
   const seenPRs = new Set();
 
   for (const label of IDENTIFYING_LABELS) {
+
     const labelQuery = `label:${label.includes(" ") ? `"${label}"` : label}`;
     const query = `repo:${repo}+is:pr+${labelQuery}+is:merged+${DATE_RANGE}`;
     const url = `${API_URL}?q=${query}&per_page=100`;
 
     try {
-      console.log(`🔍 Fetching PRs for label "${label}" in ${repo}`);
+      //console.log(`🔍 Fetching PRs for label "${label}" in ${repo}`);
       const res = await axios.get(url, {
         headers: { Authorization: `token ${GITHUB_TOKEN}` },
       });
@@ -91,12 +92,15 @@ async function fetchPRsForProject(repo) {
         }
       }
     } catch (err) {
-      console.log(err.message);
-      const warningMessage = `PRs not found for repo: ${repo} (label: ${label})\n`;
-      console.warn(warningMessage);
-      fs.appendFile('missing_prs_log.txt', warningMessage, (err) => {
-        if (err) console.error('Error writing to log file:', err);
-      });
+
+        console.log("Err: fetchPRsForProject:", err.message);
+
+        const warningMessage = `PRs not found for: ${repo} (label: ${label})\n`;
+        console.warn(warningMessage);
+
+        fs.appendFile('missing_prs_log.txt', `${url} \n \n`, (err) => {
+            if (err) console.error('Error writing to log file:', err);
+        });
     }
 
     await timer(1000); // Delay between label queries
@@ -163,8 +167,6 @@ async function generateLeaderboard() {
 
   try {
     //const { data: projects } = await axios.get(PROJECTS_URL);
-
-
     const read_file = fs.readFileSync(PROJECTS_URL, "utf8");
     const projects = JSON.parse(read_file);
 
@@ -174,7 +176,7 @@ async function generateLeaderboard() {
 
       console.log(`🚀 Processing ${repo} (${i + 1}/${projects.length})`);
       await fetchPRsForProject(repo);
-      await timer(1000); // 1s delay between repos
+      await timer(3000);
     }
 
     exportLeaderboard();
