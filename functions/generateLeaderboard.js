@@ -5,7 +5,7 @@ require("dotenv").config();
 // CONFIGURATION
 const LABELS = [
   { label: "level1", points: 3 },
-  { label: "level2", points: 5 },
+  { label: "level2", points: 7 },
   { label: "level3", points: 10 },
 ];
 const POSTMAN_BONUS = 500;
@@ -98,9 +98,9 @@ async function fetchPRsForProject(repo) {
         const warningMessage = `PRs not found for: ${repo} (label: ${label})\n`;
         console.warn(warningMessage);
 
-        fs.appendFile('missing_prs_log.txt', `${url} \n \n`, (err) => {
-            if (err) console.error('Error writing to log file:', err);
-        });
+        //fs.appendFile('missing_prs_log.txt', `${url} \n \n`, (err) => {
+        //    if (err) console.error('Error writing to log file:', err);
+        //});
     }
 
     await timer(1000); // Delay between label queries
