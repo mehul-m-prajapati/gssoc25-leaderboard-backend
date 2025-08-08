@@ -25,7 +25,9 @@ jobs:
         env:
           GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: |
+          echo "⏱️ Start Time (IST): $(TZ='Asia/Kolkata' date)"
           node run.js
+          echo "✅ End Time (IST): $(TZ='Asia/Kolkata' date)"
 
       - name: Commit and Push leaderboard.json
         run: |
