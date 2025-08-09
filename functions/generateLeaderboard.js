@@ -152,8 +152,7 @@ function exportLeaderboard() {
     updatedAt: Date.now(),
     generated: true,
     updatedTimestring:
-      new Date().toLocaleString() +
-      " — No new PRs merged after 20th Oct 2025 11:59 p.m will be counted",
+      new Date().toLocaleString("en-IN", {timeZone: "Asia/Kolkata"}) + "",
   };
 
   fs.writeFile("leaderboard.json", JSON.stringify(data, null, 2), "utf8", (err) => {
