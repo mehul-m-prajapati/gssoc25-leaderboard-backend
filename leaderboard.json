@@ -4,12 +4,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/142787780?v=4",
       "login": "Adez017",
       "url": "https://github.com/Adez017",
-      "score": 1768,
+      "score": 1775,
       "pr_urls": [
         "https://github.com/abhisek2004/Dev-Elevate/pull/517",
         "https://github.com/abhisek2004/Dev-Elevate/pull/515",
         "https://github.com/abhisek2004/Dev-Elevate/pull/508",
         "https://github.com/Abhishek2634/Foodie/pull/542",
+        "https://github.com/agamjotsingh18/trendhora/pull/265",
         "https://github.com/agamjotsingh18/trendhora/pull/264",
         "https://github.com/agamjotsingh18/trendhora/pull/262",
         "https://github.com/agamjotsingh18/trendhora/pull/261",
@@ -1239,8 +1240,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/82256067?v=4",
       "login": "akshay0611",
       "url": "https://github.com/akshay0611",
-      "score": 742,
+      "score": 772,
       "pr_urls": [
+        "https://github.com/eccentriccoder01/TalkHeal/pull/347",
+        "https://github.com/eccentriccoder01/TalkHeal/pull/346",
+        "https://github.com/eccentriccoder01/TalkHeal/pull/345",
         "https://github.com/eccentriccoder01/TalkHeal/pull/335",
         "https://github.com/eccentriccoder01/TalkHeal/pull/334",
         "https://github.com/eccentriccoder01/TalkHeal/pull/333",
@@ -8518,6 +8522,22 @@
       "postManTag": false
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/134159309?v=4",
+      "login": "shariyaansari",
+      "url": "https://github.com/shariyaansari",
+      "score": 52,
+      "pr_urls": [
+        "https://github.com/abhisek247767/PeopleHub-Frontend/pull/145",
+        "https://github.com/abhisek247767/PeopleHub-Backend/pull/55",
+        "https://github.com/Adarsh-Chaubey03/TravelGrid/pull/1297",
+        "https://github.com/SandeepVashishtha/Eventra/pull/522",
+        "https://github.com/SandeepVashishtha/Eventra/pull/521",
+        "https://github.com/SandeepVashishtha/Eventra/pull/475",
+        "https://github.com/Skrishna0703/Food-Del/pull/130"
+      ],
+      "postManTag": false
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/155170520?v=4",
       "login": "biswajit760",
       "url": "https://github.com/biswajit760",
@@ -10790,20 +10810,6 @@
         "https://github.com/EduHaven/EduHaven/pull/822",
         "https://github.com/EduHaven/EduHaven/pull/769",
         "https://github.com/MasterAffan/OptiFit/pull/63"
-      ],
-      "postManTag": false
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/134159309?v=4",
-      "login": "shariyaansari",
-      "url": "https://github.com/shariyaansari",
-      "score": 35,
-      "pr_urls": [
-        "https://github.com/Adarsh-Chaubey03/TravelGrid/pull/1297",
-        "https://github.com/SandeepVashishtha/Eventra/pull/522",
-        "https://github.com/SandeepVashishtha/Eventra/pull/521",
-        "https://github.com/SandeepVashishtha/Eventra/pull/475",
-        "https://github.com/Skrishna0703/Food-Del/pull/130"
       ],
       "postManTag": false
     },
@@ -16175,6 +16181,7 @@
       "url": "https://github.com/satyasrisundarapalli",
       "score": 17,
       "pr_urls": [
+        "https://github.com/Nagkomatla/SkillEd-Elearning-Platform.com/pull/72",
         "https://github.com/Samarth2190/stringzy/pull/80",
         "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/317"
       ],
@@ -17605,6 +17612,17 @@
       "pr_urls": [
         "https://github.com/codeaashu/DevDisplay/pull/1172",
         "https://github.com/adityadomle/BizFlow/pull/205"
+      ],
+      "postManTag": false
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/121509249?v=4",
+      "login": "parasnikum",
+      "url": "https://github.com/parasnikum",
+      "score": 13,
+      "pr_urls": [
+        "https://github.com/DevSyncx/DevSync/pull/146",
+        "https://github.com/Rucha-Ambaliya/PrivGPT-Studio/pull/54"
       ],
       "postManTag": false
     },
@@ -20890,6 +20908,16 @@
       "pr_urls": [
         "https://github.com/MeghanaDG04/RECIPEDIA/pull/327",
         "https://github.com/eccentriccoder01/SaralSeva/pull/90"
+      ],
+      "postManTag": false
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/215288548?v=4",
+      "login": "Yashaswini-V21",
+      "url": "https://github.com/Yashaswini-V21",
+      "score": 10,
+      "pr_urls": [
+        "https://github.com/agamjotsingh18/trendhora/pull/273"
       ],
       "postManTag": false
     },
@@ -26290,16 +26318,6 @@
       "postManTag": false
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/121509249?v=4",
-      "login": "parasnikum",
-      "url": "https://github.com/parasnikum",
-      "score": 3,
-      "pr_urls": [
-        "https://github.com/Rucha-Ambaliya/PrivGPT-Studio/pull/54"
-      ],
-      "postManTag": false
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/122085438?v=4",
       "login": "Demo672",
       "url": "https://github.com/Demo672",
@@ -30082,6 +30100,17 @@
       "postManTag": false
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/148671000?v=4",
+      "login": "Shamli-Singh-Yadav",
+      "url": "https://github.com/Shamli-Singh-Yadav",
+      "score": 0,
+      "pr_urls": [
+        "https://github.com/Nagkomatla/SkillEd-Elearning-Platform.com/pull/69",
+        "https://github.com/Nagkomatla/SkillEd-Elearning-Platform.com/pull/68"
+      ],
+      "postManTag": false
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/148679172?v=4",
       "login": "rozy754",
       "url": "https://github.com/rozy754",
@@ -30364,7 +30393,7 @@
     }
   ],
   "success": true,
-  "updatedAt": 1759251692228,
+  "updatedAt": 1759281279521,
   "generated": true,
-  "updatedTimestring": "30/9/2025, 10:31:32 pm"
+  "updatedTimestring": "1/10/2025, 6:44:39 am"
 }
