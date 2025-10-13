@@ -1574,7 +1574,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/178557367?v=4",
       "login": "akofficial10",
       "url": "https://github.com/akofficial10",
-      "score": 977,
+      "score": 984,
       "pr_urls": [
         "https://github.com/abhisek2004/Dev-Elevate/pull/522",
         "https://github.com/abhisek2004/Dev-Elevate/pull/521",
@@ -1627,6 +1627,7 @@
         "https://github.com/EduHaven/EduHaven/pull/792",
         "https://github.com/anup2702/build-on-coffee/pull/463",
         "https://github.com/gyanshankar1708/GrowCraft/pull/563",
+        "https://github.com/Premkolte/AnimateHub/pull/871",
         "https://github.com/Premkolte/AnimateHub/pull/754",
         "https://github.com/Premkolte/AnimateHub/pull/753",
         "https://github.com/Premkolte/AnimateHub/pull/752",
@@ -2743,7 +2744,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/191489817?v=4",
       "login": "cherylpinto",
       "url": "https://github.com/cherylpinto",
-      "score": 430,
+      "score": 440,
       "pr_urls": [
         "https://github.com/Adarsh-Chaubey03/TravelGrid/pull/1136",
         "https://github.com/Adarsh-Chaubey03/TravelGrid/pull/1134",
@@ -2768,6 +2769,7 @@
         "https://github.com/Premkolte/AnimateHub/pull/693",
         "https://github.com/Premkolte/AnimateHub/pull/654",
         "https://github.com/Premkolte/AnimateHub/pull/648",
+        "https://github.com/SandeepVashishtha/Eventra/pull/701",
         "https://github.com/SandeepVashishtha/Eventra/pull/699",
         "https://github.com/SandeepVashishtha/Eventra/pull/683",
         "https://github.com/SandeepVashishtha/Eventra/pull/674",
@@ -3346,7 +3348,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/145141126?v=4",
       "login": "Peehu1308",
       "url": "https://github.com/Peehu1308",
-      "score": 312,
+      "score": 343,
       "pr_urls": [
         "https://github.com/InnoWebLabs/Vehigo/pull/827",
         "https://github.com/InnoWebLabs/Vehigo/pull/780",
@@ -3396,6 +3398,10 @@
         "https://github.com/sampadatiwari30/DeshDarshan/pull/562",
         "https://github.com/sampadatiwari30/DeshDarshan/pull/561",
         "https://github.com/Chandu6702/Anime-Ecstasy/pull/125",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1336",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1335",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1334",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1333",
         "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1293",
         "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/963",
         "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/962"
@@ -5276,6 +5282,32 @@
       "postManTag": false
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/171212550?v=4",
+      "login": "khushi2488",
+      "url": "https://github.com/khushi2488",
+      "score": 167,
+      "pr_urls": [
+        "https://github.com/shivamm-verma/Daily-DSA/pull/343",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/146",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/136",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/134",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/132",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/130",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/128",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/124",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/121",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/111",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/107",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/103",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/91",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/82",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/77",
+        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/57",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/340"
+      ],
+      "postManTag": false
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/138564007?v=4",
       "login": "Codeboy20",
       "url": "https://github.com/Codeboy20",
@@ -5490,31 +5522,6 @@
         "https://github.com/Roshansuthar1105/Codify/pull/229",
         "https://github.com/Roshansuthar1105/Codify/pull/223",
         "https://github.com/Roshansuthar1105/Codify/pull/205"
-      ],
-      "postManTag": false
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/171212550?v=4",
-      "login": "khushi2488",
-      "url": "https://github.com/khushi2488",
-      "score": 157,
-      "pr_urls": [
-        "https://github.com/shivamm-verma/Daily-DSA/pull/343",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/136",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/134",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/132",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/130",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/128",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/124",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/121",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/111",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/107",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/103",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/91",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/82",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/77",
-        "https://github.com/ShailjaVerma18/Learning-Management-System-Nalanda-Open-University-/pull/57",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/340"
       ],
       "postManTag": false
     },
@@ -7146,6 +7153,26 @@
       "postManTag": false
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/180050192?v=4",
+      "login": "RoshanKumar9421",
+      "url": "https://github.com/RoshanKumar9421",
+      "score": 95,
+      "pr_urls": [
+        "https://github.com/omroy07/AgriTech/pull/160",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1330",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1289",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1244",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1151",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1012",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/939",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/860",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/257",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/173",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/160"
+      ],
+      "postManTag": false
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/172964013?v=4",
       "login": "zaidxGithub",
       "url": "https://github.com/zaidxGithub",
@@ -7575,25 +7602,6 @@
       "postManTag": false
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/180050192?v=4",
-      "login": "RoshanKumar9421",
-      "url": "https://github.com/RoshanKumar9421",
-      "score": 85,
-      "pr_urls": [
-        "https://github.com/omroy07/AgriTech/pull/160",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1289",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1244",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1151",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1012",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/939",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/860",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/257",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/173",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/160"
-      ],
-      "postManTag": false
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/182332326?v=4",
       "login": "Anupriyasoni21",
       "url": "https://github.com/Anupriyasoni21",
@@ -7829,6 +7837,28 @@
         "https://github.com/MonishRaman/Placify-Smarter_Placements-Sharper_Talent/pull/81",
         "https://github.com/MonishRaman/Placify-Smarter_Placements-Sharper_Talent/pull/48",
         "https://github.com/omroy07/AgriTech/pull/22"
+      ],
+      "postManTag": false
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/182128428?v=4",
+      "login": "ankita-mohantyy",
+      "url": "https://github.com/ankita-mohantyy",
+      "score": 79,
+      "pr_urls": [
+        "https://github.com/InnoWebLabs/Vehigo/pull/596",
+        "https://github.com/pavitraag/Project-Vault/pull/167",
+        "https://github.com/SAMBUDAR/Styleka/pull/25",
+        "https://github.com/Creators-Space/Creators-Space/pull/26",
+        "https://github.com/gyanshankar1708/GrowCraft/pull/1118",
+        "https://github.com/gyanshankar1708/GrowCraft/pull/1077",
+        "https://github.com/gyanshankar1708/GrowCraft/pull/881",
+        "https://github.com/gyanshankar1708/GrowCraft/pull/453",
+        "https://github.com/gyanshankar1708/GrowCraft/pull/410",
+        "https://github.com/gyanshankar1708/GrowCraft/pull/399",
+        "https://github.com/gyanshankar1708/GrowCraft/pull/369",
+        "https://github.com/gyanshankar1708/GrowCraft/pull/63",
+        "https://github.com/gyanshankar1708/GrowCraft/pull/34"
       ],
       "postManTag": false
     },
@@ -8498,27 +8528,6 @@
         "https://github.com/Agarwalvidu/ArdhNaariShakti_Taara_Frontend/pull/158",
         "https://github.com/Agarwalvidu/ArdhNaariShakti_Taara_Frontend/pull/157",
         "https://github.com/love-mishra/P-company/pull/178"
-      ],
-      "postManTag": false
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/182128428?v=4",
-      "login": "ankita-mohantyy",
-      "url": "https://github.com/ankita-mohantyy",
-      "score": 69,
-      "pr_urls": [
-        "https://github.com/InnoWebLabs/Vehigo/pull/596",
-        "https://github.com/pavitraag/Project-Vault/pull/167",
-        "https://github.com/SAMBUDAR/Styleka/pull/25",
-        "https://github.com/Creators-Space/Creators-Space/pull/26",
-        "https://github.com/gyanshankar1708/GrowCraft/pull/1077",
-        "https://github.com/gyanshankar1708/GrowCraft/pull/881",
-        "https://github.com/gyanshankar1708/GrowCraft/pull/453",
-        "https://github.com/gyanshankar1708/GrowCraft/pull/410",
-        "https://github.com/gyanshankar1708/GrowCraft/pull/399",
-        "https://github.com/gyanshankar1708/GrowCraft/pull/369",
-        "https://github.com/gyanshankar1708/GrowCraft/pull/63",
-        "https://github.com/gyanshankar1708/GrowCraft/pull/34"
       ],
       "postManTag": false
     },
@@ -10889,6 +10898,20 @@
       "postManTag": false
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/201977743?v=4",
+      "login": "SnehaTingare",
+      "url": "https://github.com/SnehaTingare",
+      "score": 47,
+      "pr_urls": [
+        "https://github.com/Abhishek2634/Foodie/pull/735",
+        "https://github.com/Abhishek2634/Foodie/pull/734",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1322",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1285",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1248"
+      ],
+      "postManTag": false
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/206648796?v=4",
       "login": "Diksha8-db",
       "url": "https://github.com/Diksha8-db",
@@ -11932,6 +11955,18 @@
       "postManTag": false
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/123363184?v=4",
+      "login": "sabha348",
+      "url": "https://github.com/sabha348",
+      "score": 40,
+      "pr_urls": [
+        "https://github.com/abhisek2004/Dev-Elevate/pull/492",
+        "https://github.com/EduHaven/EduHaven/pull/702",
+        "https://github.com/Samarth2190/stringzy/pull/119"
+      ],
+      "postManTag": false
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/147429809?v=4",
       "login": "rohit-hub07",
       "url": "https://github.com/rohit-hub07",
@@ -12515,19 +12550,6 @@
         "https://github.com/agamjotsingh18/trendhora/pull/244",
         "https://github.com/InnoWebLabs/Vehigo/pull/803",
         "https://github.com/swarooppatilx/bit-by-query/pull/72"
-      ],
-      "postManTag": false
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/201977743?v=4",
-      "login": "SnehaTingare",
-      "url": "https://github.com/SnehaTingare",
-      "score": 37,
-      "pr_urls": [
-        "https://github.com/Abhishek2634/Foodie/pull/734",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1322",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1285",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1248"
       ],
       "postManTag": false
     },
@@ -13352,17 +13374,6 @@
         "https://github.com/VAIBHAVBABELE/vaibhavbabele.github.io/pull/90",
         "https://github.com/VAIBHAVBABELE/vaibhavbabele.github.io/pull/74",
         "https://github.com/VAIBHAVBABELE/vaibhavbabele.github.io/pull/64"
-      ],
-      "postManTag": false
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/123363184?v=4",
-      "login": "sabha348",
-      "url": "https://github.com/sabha348",
-      "score": 30,
-      "pr_urls": [
-        "https://github.com/abhisek2004/Dev-Elevate/pull/492",
-        "https://github.com/EduHaven/EduHaven/pull/702"
       ],
       "postManTag": false
     },
@@ -14438,6 +14449,21 @@
       "postManTag": false
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/134728855?v=4",
+      "login": "Kapishbansal48",
+      "url": "https://github.com/Kapishbansal48",
+      "score": 26,
+      "pr_urls": [
+        "https://github.com/sampadatiwari30/DeshDarshan/pull/791",
+        "https://github.com/codeaashu/DevDisplay/pull/1186",
+        "https://github.com/shivamm-verma/Daily-DSA/pull/377",
+        "https://github.com/sachiva1/sachiva/pull/260",
+        "https://github.com/supriya46788/Research-Paper-Organizer/pull/844",
+        "https://github.com/supriya46788/BakeGenuis-AI/pull/469"
+      ],
+      "postManTag": false
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/139871425?v=4",
       "login": "Kashish23092004",
       "url": "https://github.com/Kashish23092004",
@@ -15170,6 +15196,18 @@
       "postManTag": false
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/205044745?v=4",
+      "login": "sanchita311",
+      "url": "https://github.com/sanchita311",
+      "score": 24,
+      "pr_urls": [
+        "https://github.com/SandeepVashishtha/Eventra/pull/709",
+        "https://github.com/Mohitjadaun2026/PMS-CGC-U/pull/220",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1295"
+      ],
+      "postManTag": false
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/210236679?v=4",
       "login": "aditi-jadhav-arch",
       "url": "https://github.com/aditi-jadhav-arch",
@@ -15879,6 +15917,18 @@
         "https://github.com/Gagandeep-2003/driver-drowsiness-detection-system/pull/64",
         "https://github.com/PRIYANSHU2026/DataSentience-AIML/pull/515",
         "https://github.com/PRIYANSHU2026/DataSentience-AIML/pull/233"
+      ],
+      "postManTag": false
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/113170985?v=4",
+      "login": "buku2004",
+      "url": "https://github.com/buku2004",
+      "score": 21,
+      "pr_urls": [
+        "https://github.com/SandeepVashishtha/Eventra/pull/703",
+        "https://github.com/SandeepVashishtha/Eventra/pull/684",
+        "https://github.com/SandeepVashishtha/Eventra/pull/675"
       ],
       "postManTag": false
     },
@@ -17038,20 +17088,6 @@
       "postManTag": false
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/134728855?v=4",
-      "login": "Kapishbansal48",
-      "url": "https://github.com/Kapishbansal48",
-      "score": 19,
-      "pr_urls": [
-        "https://github.com/sampadatiwari30/DeshDarshan/pull/791",
-        "https://github.com/codeaashu/DevDisplay/pull/1186",
-        "https://github.com/shivamm-verma/Daily-DSA/pull/377",
-        "https://github.com/sachiva1/sachiva/pull/260",
-        "https://github.com/supriya46788/BakeGenuis-AI/pull/469"
-      ],
-      "postManTag": false
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/135053354?v=4",
       "login": "saymanlal",
       "url": "https://github.com/saymanlal",
@@ -17305,6 +17341,16 @@
         "https://github.com/Adarsh-Chaubey03/TravelGrid/pull/424",
         "https://github.com/Adarsh-Chaubey03/TravelGrid/pull/386",
         "https://github.com/Amarjha01/InfantCareCompass/pull/155"
+      ],
+      "postManTag": false
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/113999689?v=4",
+      "login": "fiza-h",
+      "url": "https://github.com/fiza-h",
+      "score": 17,
+      "pr_urls": [
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1331"
       ],
       "postManTag": false
     },
@@ -18218,17 +18264,6 @@
       "postManTag": false
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/205044745?v=4",
-      "login": "sanchita311",
-      "url": "https://github.com/sanchita311",
-      "score": 17,
-      "pr_urls": [
-        "https://github.com/Mohitjadaun2026/PMS-CGC-U/pull/220",
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1295"
-      ],
-      "postManTag": false
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/206417653?v=4",
       "login": "devwith-shry",
       "url": "https://github.com/devwith-shry",
@@ -18829,17 +18864,6 @@
       "postManTag": false
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/113170985?v=4",
-      "login": "buku2004",
-      "url": "https://github.com/buku2004",
-      "score": 14,
-      "pr_urls": [
-        "https://github.com/SandeepVashishtha/Eventra/pull/684",
-        "https://github.com/SandeepVashishtha/Eventra/pull/675"
-      ],
-      "postManTag": false
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/115783538?v=4",
       "login": "chauhan-varun",
       "url": "https://github.com/chauhan-varun",
@@ -18847,6 +18871,17 @@
       "pr_urls": [
         "https://github.com/Abhishek2634/Foodie/pull/531",
         "https://github.com/Abhishek2634/Foodie/pull/530"
+      ],
+      "postManTag": false
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/116425582?v=4",
+      "login": "palchhinparihar",
+      "url": "https://github.com/palchhinparihar",
+      "score": 14,
+      "pr_urls": [
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1321",
+        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1250"
       ],
       "postManTag": false
     },
@@ -24203,16 +24238,6 @@
       "score": 7,
       "pr_urls": [
         "https://github.com/sampadatiwari30/DeshDarshan/pull/16"
-      ],
-      "postManTag": false
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/116425582?v=4",
-      "login": "palchhinparihar",
-      "url": "https://github.com/palchhinparihar",
-      "score": 7,
-      "pr_urls": [
-        "https://github.com/RhythmPahwa14/AlgoVisualizer/pull/1250"
       ],
       "postManTag": false
     },
@@ -33353,7 +33378,7 @@
     }
   ],
   "success": true,
-  "updatedAt": 1760318037741,
+  "updatedAt": 1760346288069,
   "generated": true,
-  "updatedTimestring": "13/10/2025, 6:43:57 am"
+  "updatedTimestring": "13/10/2025, 2:34:48 pm"
 }
